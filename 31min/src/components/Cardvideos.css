@@ -1,0 +1,51 @@
+/* Estilos para las tarjetas de videos */
+.cardvideos {
+    position: relative;
+    width: 280px; /* Reducción en el ancho */
+    height: 230px; /* Reducción en la altura */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Fondo */
+  }
+  
+  .cardvideos img {
+    width: 100%; /* Ajusta el ancho para que la imagen ocupe todo el espacio disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+  }
+  
+  .cardvideos h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0; /* Elimina el margen para evitar el desbordamiento */
+    font-size: 26px; /* Ajusta el tamaño de la fuente según sea necesario */
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .card-row:nth-child(1) {
+    margin-bottom: 10px; /* Ajuste para superponer ligeramente la primera fila sobre la segunda */
+  }
